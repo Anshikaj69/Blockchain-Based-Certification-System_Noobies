@@ -1,0 +1,158 @@
+[
+    {
+      "type": "event",
+      "name": "CertificateIssued",
+      "inputs": [
+        {
+          "type": "bytes32",
+          "name": "hash",
+          "indexed": false,
+          "internalType": "bytes32"
+        }
+      ],
+      "outputs": [],
+      "anonymous": false
+    },
+    {
+      "type": "function",
+      "name": "CreateOrganization",
+      "inputs": [
+        {
+          "type": "address",
+          "name": "_owner",
+          "internalType": "address"
+        },
+        {
+          "type": "string",
+          "name": "_name",
+          "internalType": "string"
+        },
+        {
+          "type": "string",
+          "name": "_typeOfOrganization",
+          "internalType": "string"
+        },
+        {
+          "type": "string",
+          "name": "_website",
+          "internalType": "string"
+        },
+        {
+          "type": "string",
+          "name": "_email",
+          "internalType": "string"
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "IssueCertificate",
+      "inputs": [
+        {
+          "type": "address",
+          "name": "_address",
+          "internalType": "address"
+        },
+        {
+          "type": "string",
+          "name": "_title",
+          "internalType": "string"
+        },
+        {
+          "type": "string",
+          "name": "_description",
+          "internalType": "string"
+        },
+        {
+          "type": "string",
+          "name": "_recipientName",
+          "internalType": "string"
+        }
+      ],
+      "outputs": [
+        {
+          "type": "bytes32",
+          "name": "",
+          "internalType": "bytes32"
+        }
+      ],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "VerifyCertificate",
+      "inputs": [
+        {
+          "type": "bytes32",
+          "name": "hash",
+          "internalType": "bytes32"
+        }
+      ],
+      "outputs": [
+        {
+          "type": "bool",
+          "name": "isVerified",
+          "internalType": "bool"
+        },
+        {
+          "type": "tuple",
+          "name": "",
+          "components": [
+            {
+              "type": "address",
+              "name": "recipient",
+              "internalType": "address"
+            },
+            {
+              "type": "uint256",
+              "name": "key",
+              "internalType": "uint256"
+            },
+            {
+              "type": "bytes32",
+              "name": "id",
+              "internalType": "bytes32"
+            },
+            {
+              "type": "string",
+              "name": "title",
+              "internalType": "string"
+            },
+            {
+              "type": "string",
+              "name": "description",
+              "internalType": "string"
+            },
+            {
+              "type": "string",
+              "name": "recipientName",
+              "internalType": "string"
+            }
+          ],
+          "internalType": "struct CertificateManager.Certificate"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "isOrganization",
+      "inputs": [
+        {
+          "type": "address",
+          "name": "_address",
+          "internalType": "address"
+        }
+      ],
+      "outputs": [
+        {
+          "type": "bool",
+          "name": "",
+          "internalType": "bool"
+        }
+      ],
+      "stateMutability": "view"
+    }
+  ]

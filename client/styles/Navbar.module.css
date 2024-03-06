@@ -1,0 +1,57 @@
+
+.container
+{
+    width: 100%;
+    display: flex;
+    padding: 0 48px;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    margin-top: 10px;
+}
+
+.icon
+{
+    display: block;
+    max-width: 82px;
+    width: auto;
+    height: auto;     
+    margin: auto 0;
+    user-select: none;
+
+    transition: all 0.2s ease-out;
+}
+.icon:hover
+{
+    opacity: 0.85;
+}
+.links
+{
+    list-style: none;
+    display: flex;
+    text-decoration: none;
+}
+
+.links li 
+{
+    margin: auto 12px;
+}
+
+.connect
+{
+    height: min-content;
+    margin-left: 14px;
+}
+
+@media (max-width: 600px) {
+
+    .icon
+    {
+        max-width: 50px;
+    }
+
+    .links
+    {
+        font-size: 12px;
+    }
+    
+}
