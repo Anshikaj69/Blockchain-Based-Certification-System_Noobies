@@ -7,6 +7,7 @@ import { useAuthContext } from "../../context";
 import { useRouter } from "next/router";
 
 const CreateOrganization = () => {
+  console.log("inside ccrete org");
   const { address, Contract, IsOrg, loading } = useAuthContext();
 
   const { mutateAsync: CreateOrganization } = useContractWrite(
@@ -48,7 +49,7 @@ const CreateOrganization = () => {
 
   return (
     <div>
-      {(Loading || loading) && <Loader props={"Create Organization"} />}
+      {/* {(Loading || loading) && <Loader props={"Create Organization"} />} */}
 
       <div className={styles.container}>
         <Navbar></Navbar>

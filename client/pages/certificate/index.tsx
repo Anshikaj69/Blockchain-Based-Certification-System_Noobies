@@ -89,10 +89,10 @@ const CertificateIssue = () => {
         </form>
         {result && (
           <div className={styles.form}>
-            <h1 className={styles.title}>Result</h1>
+            <h1 className={styles.title}>CERTIFICATE</h1>
 
             <img
-              src={`https://api.qrserver.com/v1/create-qr-code/?data=https://dcis.vercel.app/verify/${result}&size=256x256&bgcolor=220-227-231`}
+              src={`https://api.qrserver.com/v1/create-qr-code/?data=http://localhost:3000/verify/${result}&size=256x256&bgcolor=220-227-231`}
               alt=""
               title="qrcode"
               width={256}

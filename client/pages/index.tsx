@@ -31,7 +31,7 @@ const Home: NextPage = () => {
         <VideoEff/>
         <Navbar></Navbar>
         <div className={styles.app}>
-          {loading && <Loader props={"Home Page"} />}
+          {/* {loading && <Loader props={"Home Page"} />} */}
           <h1 className={styles.title}>
             Blockchain-Based Certification System
           </h1>

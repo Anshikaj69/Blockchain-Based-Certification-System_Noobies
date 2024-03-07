@@ -4,13 +4,14 @@ import Image from "next/image";
 import styles from "../styles/Navbar.module.css";
 import Link from "next/link";
 import { useAuthContext } from "../context";
+import { fontSize } from "@thirdweb-dev/react/dist/declarations/src/design-system";
 
 const Navbar = () => {
   const { address, IsOrg } = useAuthContext();
 
   return (
     <div className={styles.container}>
-      <a href="/">SecureStamp</a>
+      <a href="/" id="brand">SecureStamp</a>
       <ul className={styles.links}>
         <li>
           <Link href="/verify">Verify</Link>

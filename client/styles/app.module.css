@@ -36,7 +36,7 @@
 
   margin: 0 auto;
   
-  background-color: #0083b0;
+  background-color: #ba5a00;
   color:  black;
 
   padding: 18px 18px;
@@ -57,7 +57,7 @@
 .form p{
   margin-top: 0;
   word-wrap: break-word;
-  
+  color: #121212;
 }
 
 @media (max-width: 800px) {
