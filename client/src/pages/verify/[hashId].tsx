@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Navbar from "../../components/Navbar";
 import styles from "../../styles/app.module.css";
 import Loader from "../../components/Loader";
-import { useAuthContext } from "../../context";
+import { useAuthContext } from "../../../context";
 import { useRouter } from "next/router";
 import { FaCheckCircle } from "react-icons/fa";
 import { IoCloseCircle } from "react-icons/io5";

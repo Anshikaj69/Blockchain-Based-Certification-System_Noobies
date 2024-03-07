@@ -4,7 +4,7 @@ import styles from "../../styles/app.module.css";
 
 import { useContractWrite } from "@thirdweb-dev/react";
 import Loader from "../../components/Loader";
-import { useAuthContext } from "../../context";
+import { useAuthContext } from "../../../context";
 import Image from "next/image";
 
 const CertificateIssue = () => {

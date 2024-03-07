@@ -5,8 +5,9 @@ import {
   useContext,
   useEffect,
   useState,
+  
 } from "react";
-import {contractAbi} from '../constants';
+import {contractAbi} from '../src/constants';
 export interface Auth {
   address: string | undefined;
   Contract: SmartContract | undefined;

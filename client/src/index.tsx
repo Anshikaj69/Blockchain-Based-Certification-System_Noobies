@@ -1,11 +1,11 @@
 import styles from "../styles/Home.module.css";
 import { NextPage } from "next";
-import Navbar from "../components/Navbar";
+import Navbar from "./components/Navbar";
 import { useRouter } from "next/router";
 import { ConnectWallet, darkTheme } from "@thirdweb-dev/react";
-import Loader from "../components/Loader";
+import Loader from "./components/Loader";
 import { useAuthContext } from "../context";
-import VideoEff from "../components/VideoEff";
+import VideoEff from "./components/VideoEff";
 
 const Home: NextPage = () => {
   const btnTheme = darkTheme({

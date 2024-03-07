@@ -3,7 +3,7 @@ import Navbar from "../../components/Navbar";
 import styles from "../../styles/app.module.css";
 import { useContractWrite } from "@thirdweb-dev/react";
 import Loader from "../../components/Loader";
-import { useAuthContext } from "../../context";
+import { useAuthContext } from "../../../context";
 import { useRouter } from "next/router";
 
 const CreateOrganization = () => {
