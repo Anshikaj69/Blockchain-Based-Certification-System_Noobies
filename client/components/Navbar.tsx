@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <div className={styles.container}>
-      <a href="/" id="brand">SecureStamp</a>
+      <Link href="/" id="brand">SecureStamp</Link>
       <ul className={styles.links}>
         <li>
           <Link href="/verify">Verify</Link>
